@@ -22,7 +22,14 @@
         <property name="hbm2ddl.auto">create</property>
 
         <!--Annotated entity class-->
-        <mapping class="com.ttn.entity.Person"/>
-
+        <!--<mapping class="com.ttn.entity.inheritence.mappedSuperclass.DebitAccount"/>-->
+        <mapping class="com.ttn.entity.inheritence.single_table.Account"/>
+        <mapping class="com.ttn.entity.inheritence.single_table.DebitAccount"/>
+        <!--<mapping class="com.ttn.entity.one_to_many.unidirectional.Employee"/>-->
+        <!--<mapping class="com.ttn.entity.one_to_many.unidirectional.Vehicle"/>-->
+        <!--<mapping class="com.ttn.entity.one_to_many.bydirectional.Vehicle"/>-->
+        <!--<mapping class="com.ttn.entity.one_to_many.bydirectional.Employee"/>-->
+        <!--<mapping class="com.ttn.entity.many_to_one.Vehicle"/>-->
+        <!--<mapping class="com.ttn.entity.many_to_one.Employee"/>-->
     </session-factory>
 </hibernate-configuration>
